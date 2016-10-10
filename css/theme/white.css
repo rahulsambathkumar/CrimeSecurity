@@ -40,7 +40,7 @@ body {
 .reveal h5,
 .reveal h6 {
   margin: 0 0 20px 0;
-  color: #222;
+  color: #002A42;
   font-family: "Source Sans Pro", Helvetica, sans-serif;
   font-weight: 600;
   line-height: 1.2;
@@ -285,3 +285,16 @@ body {
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+
+/*Modifications*/
+.reveal .titleslide h2,
+.reveal .titleslide h5 {
+  color: #FFFFFF;
+}
+
+.bw {
+		-webkit-filter: grayscale(0.6);
+		-moz-filter: grayscale(0.6);
+		-ms-filter: grayscale(0.6);
+		filter: grayscale(0.6);
+}

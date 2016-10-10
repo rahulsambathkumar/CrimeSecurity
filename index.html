@@ -6,8 +6,8 @@
 
 		<title>reveal.js</title>
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/simple.css">
+		<link rel="stylesheet" href="css/reveal_mod.css">
+		<link rel="stylesheet" href="css/theme/white.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,10 +24,49 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 100</section>
-				<section>Slide 200</section>
-        <section>Slide 300</section>
-        <section>Slide 400</section>
+				<section data-background-image="lib/assets/25.jpg" class="bw titleslide">
+          <h2><b>Risk Sharing Networks in Rural Philippines</b></h2>
+          <h5>Susan Lund and Marcel Fafchamps</h5>
+          <br><br><br><br>
+          <h5>Devvart Poddar</h5>
+          <h5>Hertie School of Governance</h5>
+        </section>
+
+        <section>
+          <h2><b>Aim</b></h2>
+          <small>
+            <p class="fragment">
+              This is one para.....
+            </p>
+            <p class="fragment">
+              ... and this is another.
+            </p>
+          </small>
+        </section>
+
+        <section>
+          <h2><b>Theory</b></h2>
+        </section>
+
+        <section>
+          <h2><b>Data</b></h2>
+        </section>
+
+        <section>
+          <h2><b>Results</b></h2>
+        </section>
+
+        <section>
+          <h2><b>Summary</b></h2>
+        </section>
+
+        <section>
+          <h2><b>Conclusion</b></h2>
+        </section>
+
+        <section>
+          <h2><b>Appendix</b></h2>
+        </section>
 			</div>
 		</div>
 
@@ -37,18 +76,20 @@
 		<script>
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				history: true,
+				history: false,
         controls: true,
         progress: true,
         slideNumber: true,
         center: false,
+        overview: true,
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: 'plugin/math/math.js', async: true }
 				]
 			});
 		</script>
