@@ -298,3 +298,15 @@ body {
 		-ms-filter: grayscale(0.6);
 		filter: grayscale(0.6);
 }
+
+img#image {
+  border: 0;
+  border-style: none;
+}
+
+img.resize {
+  max-width: 70%;
+  max-height: 50%;
+  text-align: center;
+  display: block;
+}

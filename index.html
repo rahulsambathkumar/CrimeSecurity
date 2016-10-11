@@ -62,18 +62,27 @@
             <small>
               <ul style="list-style-type:square">
                 <li>
-                  If risk sharing is efficient, consumption should be uunaffected by variations in income. i.e.
+                  If risk sharing is efficient, consumption should be unaffected by variations in income. i.e.
                   shortages in income met through increased borrowings / gifts
-                <br><br>
-                $$g_{s,t}^i + b_{s,t}^i = \alpha_0 + \alpha_1 z_{s,t}^i + \alpha_2 X_t^i +
-                \alpha_3 V_t^i + \epsilon_t^i$$
                 </li>
                 <br>
                 <li class="fragment">
-                  Also need to account for availablity of credit due to lack of collatral,
-                  network size and network quality amongst others.
+                  Assumes that consumption is entirely financed through income, i.e.
+                  $c_{t}^i = y_{t}^i + g_{t}^i + b_{t}^i $
+                </li>
+                <br>
+                <li class="fragment">
+                  Controls for individual characteristics $X_t^i$ and village level dummies $V_t^i$
+                </li>
+                <br>
+                <li  class="fragment">
+                  Baseline regression model is given by;
+                  <br><br>
+                  $$g_{s,t}^i + b_{s,t}^i = \alpha_0 + \alpha_1 z_{s,t}^i + \alpha_2 X_t^i +
+                  \alpha_3 V_t^i + \epsilon_t^i$$
                 </li>
               </ul>
+              <br><br>
             </small>
           </section>
 
@@ -84,37 +93,23 @@
               <ul style="list-style-type:square">
                 <li>
                   Risk sharing may fail in presence of credit contraints; i.e. individuals
-                  without sufficient collatral would borrow less than "well endowed" households
-                <br><br>
-                $$g_{s,t}^i + b_{s,t}^i = \alpha_0 + \alpha_1 z_{s,t}^i + \alpha_2 z_{s,t}^i \times A_t^i +
-                \alpha_3 X_t^i + \alpha_4 V_t^i + \epsilon_t^i$$
+                  without sufficient collatral would borrow less than "well endowed" households;
+                  The author look at the interaction between assets and shocks on net borrowings
                 </li>
                 <br>
                 <li class="fragment">
-                  Risk sharing may also fail if transfers limited to connected individuals.
-                  Trust or Altruism.
-                <br><br>
-                $$g_{s,t}^i + b_{s,t}^i = \alpha_0 + \alpha_1 z_{s,t}^i + \alpha_2 z_{s,t}^{p_i} +
-                \alpha_3 X_t^i + \alpha_4 X_t^{p_i} + \alpha_5 V_t^i + \epsilon_t^i$$
-                </li>
-              </ul>
-            </small>
-          </section>
-
-          <section>
-            <h2>... through the presence of informal credit and gifts</h2>
-            <br>
-            <small>
-              <ul style="list-style-type:square">
-                <li>
-                  Network Quality
-                <br><br>
-                $$g_{s,t}^i + b_{s,t}^i = \alpha_0 + \alpha_1 z_{s,t}^i + \alpha_2 z_{s,t}^{p_i} +
-                \alpha_3 X_t^i + \alpha_4 X_t^{p_i} + \alpha_5 V_t^i + \alpha_6 z_{s,t}^i \times Q^{p_i} + \epsilon_t^i$$
+                  Risk sharing may also fail if transfers limited to <i>closely connected</i> individuals.
+                  Credibility of repayment, or altruism due to personal relationships. Netwrok Quality
+                  Important?
                 </li>
                 <br>
                 <li class="fragment">
-                  Finally, they also look at the level of indebtedness and its role in determinig
+                  Risk sharing and tranfer of credit in place of indebtedness
+                </li>
+                <br>
+                <li class="fragment">
+                  Finally, authors also explore the wether altruism is a powerful motive in
+                  risk sharing, or presence of self interest in providing credit
                 </li>
               </ul>
             </small>
@@ -123,8 +118,52 @@
         </section>
 
         <section>
-          <h2><b>Data</b></h2>
+
+          <section>
+            <h3>206 Households spread across 4 villages surveyed</h3>
+            <br>
+            <small>
+              <ul style="list-style-type:square">
+                <li>
+                  Three interviews conducted in 4 villages in rural Philippines between
+                  July 1994, (after rice harvest) and March 1995, (after new crop has been transplanted)
+                </li>
+                <br>
+                <li class="fragment">
+                  206 households randomly selected for the interviews. Data collected include list of remitances
+                  and gifts given / recieved, income and consumtion shocks and characteristics such as cultivated land, age of head
+                  among others
+                </li>
+                <br>
+                <li class="fragment">
+                  Complete data about network partners also collected in similar detail.
+                </li>
+              </ul>
+            </small>
+          </section>
+
+          <section>
+            <h3>Something about the data</h3>
+            <img src="lib/assets/table5_a.png" alt="Missing" class="reveal" id = "image"/>
+            <!-- <div class="wrapper" style="background-image: url('lib/assets/table5_a.png');"></div> -->
+          </section>
+
+          <section>
+            <h3>Something about the data</h3>
+            <p style="text-align:center;">
+              <img src="lib/assets/table5_b.png" alt="Missing" class="reveal resize" id = "image"/>
+            </p>
+          </section>
+
+          <section>
+            <h3>Something about the data</h3>
+            <p style="text-align:center;">
+              <img src="lib/assets/table5_b.png" alt="Missing" class="reveal resize" id = "image"/>
+            </p>
+          </section>
+
         </section>
+
 
         <section>
           <h2><b>Results</b></h2>
@@ -156,7 +195,7 @@
         slideNumber: true,
         center: false,
         overview: true,
-        transition: 'fade',
+        transition: 'slide',
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
