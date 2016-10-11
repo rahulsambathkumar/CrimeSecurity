@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Risk-Sharing Networks in Rural Philippines</title>
 
 		<link rel="stylesheet" href="css/reveal_mod.css">
 		<link rel="stylesheet" href="css/theme/white.css">
@@ -33,19 +33,93 @@
         </section>
 
         <section>
-          <h2><b>Aim</b></h2>
+          <h2>The study aims to understand the process of risk sharing ...</h2>
+          <br>
           <small>
-            <p class="fragment">
-              This is one para.....
-            </p>
-            <p class="fragment">
-              ... and this is another.
-            </p>
+            <ul style="list-style-type:square">
+              <li>
+                Life is risky, with timing of large expenditures unforseeable
+              </li>
+              <br>
+              <li>
+                Informal institutions allow household to counter the impact of income
+                variation. Consumtion Smoothing?
+              </li>
+              <br>
+              <li>
+                Need to account for gaps in litterature on the process of risk sharing,
+                in the presence of sudden expenditures such as funeral costs
+              </li>
+            </ul>
           </small>
         </section>
 
         <section>
-          <h2><b>Theory</b></h2>
+          <!-- Makes space for vertical slides. Now use more section -->
+          <section>
+            <h2>... through the presence of informal credit and gifts</h2>
+            <br>
+            <small>
+              <ul style="list-style-type:square">
+                <li>
+                  If risk sharing is efficient, consumption should be uunaffected by variations in income. i.e.
+                  shortages in income met through increased borrowings / gifts
+                <br><br>
+                $$g_{s,t}^i + b_{s,t}^i = \alpha_0 + \alpha_1 z_{s,t}^i + \alpha_2 X_t^i +
+                \alpha_3 V_t^i + \epsilon_t^i$$
+                </li>
+                <br>
+                <li class="fragment">
+                  Also need to account for availablity of credit due to lack of collatral,
+                  network size and network quality amongst others.
+                </li>
+              </ul>
+            </small>
+          </section>
+
+          <section>
+            <h2>... through the presence of informal credit and gifts</h2>
+            <br>
+            <small>
+              <ul style="list-style-type:square">
+                <li>
+                  Risk sharing may fail in presence of credit contraints; i.e. individuals
+                  without sufficient collatral would borrow less than "well endowed" households
+                <br><br>
+                $$g_{s,t}^i + b_{s,t}^i = \alpha_0 + \alpha_1 z_{s,t}^i + \alpha_2 z_{s,t}^i \times A_t^i +
+                \alpha_3 X_t^i + \alpha_4 V_t^i + \epsilon_t^i$$
+                </li>
+                <br>
+                <li class="fragment">
+                  Risk sharing may also fail if transfers limited to connected individuals.
+                  Trust or Altruism.
+                <br><br>
+                $$g_{s,t}^i + b_{s,t}^i = \alpha_0 + \alpha_1 z_{s,t}^i + \alpha_2 z_{s,t}^{p_i} +
+                \alpha_3 X_t^i + \alpha_4 X_t^{p_i} + \alpha_5 V_t^i + \epsilon_t^i$$
+                </li>
+              </ul>
+            </small>
+          </section>
+
+          <section>
+            <h2>... through the presence of informal credit and gifts</h2>
+            <br>
+            <small>
+              <ul style="list-style-type:square">
+                <li>
+                  Network Quality
+                <br><br>
+                $$g_{s,t}^i + b_{s,t}^i = \alpha_0 + \alpha_1 z_{s,t}^i + \alpha_2 z_{s,t}^{p_i} +
+                \alpha_3 X_t^i + \alpha_4 X_t^{p_i} + \alpha_5 V_t^i + \alpha_6 z_{s,t}^i \times Q^{p_i} + \epsilon_t^i$$
+                </li>
+                <br>
+                <li class="fragment">
+                  Finally, they also look at the level of indebtedness and its role in determinig
+                </li>
+              </ul>
+            </small>
+          </section>
+
         </section>
 
         <section>
@@ -82,6 +156,7 @@
         slideNumber: true,
         center: false,
         overview: true,
+        transition: 'fade',
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
