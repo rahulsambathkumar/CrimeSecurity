@@ -38,17 +38,18 @@
           <small>
             <ul style="list-style-type:square">
               <li>
-                Life is risky, with timing of large expenditures unforseeable
-              </li>
-              <br>
-              <li>
                 Informal institutions allow household to counter the impact of income
-                variation. Consumtion Smoothing?
+                variation. However process of risk sharing not explicitly detailed in literature
               </li>
               <br>
               <li>
-                Need to account for gaps in litterature on the process of risk sharing,
-                in the presence of sudden expenditures such as funeral costs
+                Aims to investigate which method of transfers (assets, gifts and informal loans) serve
+                to efficiently share risk
+              </li>
+              <br>
+              <li>
+                Social Networks play an important role in risk sharing, however gaps in literature on
+                the topic. A primary objective
               </li>
             </ul>
           </small>
@@ -63,19 +64,21 @@
               <ul style="list-style-type:square">
                 <li>
                   If risk sharing is efficient, consumption should be unaffected by variations in income. i.e.
-                  shortages in income met through increased borrowings / gifts
+                  shortages in income met through increased borrowings / gifts or through changes
+                  in household assets
                 </li>
                 <br>
                 <li class="fragment">
-                  Controls for individual and network characteristics, $X_t^i$ and $X_t^{p_i}$, and
-                  village level dummies $V_t^i$. Also controls for
+                  In the presence of open social networks characterised by frictionless transfers,
+                  efficient sharing of risk. However issues if transfers are not frictionless. (Friction ~
+                  Cost to be Kind)
                 </li>
                 <br>
                 <li  class="fragment">
-                  Baseline regression model is given by;
+                  In such a case, basic model of risk sharing is given by;
                   <br><br>
-                  $$g_{s,t}^i + b_{s,t}^i = \alpha_0 + \alpha_1 z_{s,t}^i + \alpha_2 z_{s,t}^{p_i} +
-                  \alpha_3 X_t^i + \alpha_4 X_t^{p_i} + \alpha_4 V_t^i + \epsilon_t^i$$
+                  $$g_{s,t}^i + b_{s,t}^i + \Delta w_t^i = \alpha_0 + \alpha_1 z_{s,t}^i + \alpha_2 z_{s,t}^{P_i} +
+                  \alpha_3 X_t^i + \alpha_4 X_t^{P_i} + \alpha_4 V_t^i + \epsilon_t^i$$
                 </li>
               </ul>
               <br><br>
@@ -88,24 +91,18 @@
             <small>
               <ul style="list-style-type:square">
                 <li>
-                  Risk sharing may fail in presence of credit contraints; i.e. individuals
-                  without sufficient collatral would borrow less than "well endowed" households;
-                  The author look at the interaction between assets and shocks on net borrowings
+                  $\alpha_2$, i.e. coefficiant of network shock, will be 0 if risk is shared efficiently,
+                  but > 0 in presence of friction.
                 </li>
                 <br>
                 <li class="fragment">
-                  Risk sharing may also fail if transfers limited to <i>closely connected</i> individuals.
-                  Credibility of repayment, or altruism due to personal relationships. Netwrok Quality
-                  Important?
+                  Authors also check for wether shock are partially or fully insured through
+                  informal gifts and transfers
                 </li>
                 <br>
                 <li class="fragment">
-                  Risk sharing and tranfer of credit in place of indebtedness
-                </li>
-                <br>
-                <li class="fragment">
-                  Finally, authors also explore the wether altruism is a powerful motive in
-                  risk sharing, or presence of self interest in providing credit
+                  Finally, they investigate wether altruism is the major reason behind the risk-sharing
+                  practices, or self-interest behaviour.
                 </li>
               </ul>
             </small>
@@ -114,23 +111,24 @@
 
         <section>
           <section>
-            <h3>206 Households spread across 4 villages surveyed</h3>
+            <h3>Set among 206 households in rural Philippines</h3>
             <br>
             <small>
               <ul style="list-style-type:square">
                 <li>
-                  Three interviews conducted in 4 villages in rural Philippines between
-                  July 1994, (after rice harvest) and March 1995, (after new crop has been transplanted)
+                  Survey conducted on 206 households randomly selected after a census.
+                  Three interviews were held with the housholds between
+                  July 1994, (after rice harvest) and March 1995, (after new crop has been transplanted).
                 </li>
                 <br>
                 <li class="fragment">
-                  206 households randomly selected for the interviews. Data collected include list of remitances
-                  and gifts given / recieved, income and consumtion shocks and characteristics such as cultivated land, age of head
-                  among others
+                  Respondents asked to list "insurance networks". Detailed characteristics of the
+                  households as well as its network partners were collected.
                 </li>
                 <br>
                 <li class="fragment">
-                  Complete data about network partners also collected in similar detail.
+                  In addition, a subjective "shock" variable was measured ranging from -2 (very good) to
+                  +2 (very bad) based on their subjective weighting of the shocks.
                 </li>
               </ul>
             </small>
@@ -138,33 +136,52 @@
 
           <section>
             <h3>Something about the data</h3>
-            <div class="extra-wide-figure"><img src="lib/assets/table5_a.png" alt="Missing"/></div>
+            <div class="extra-wide-figure" style="height: 600px"><img src="lib/assets/transfers.png" alt="Missing"/></div>
           </section>
 
           <section>
             <h3>Something about the data</h3>
-            <div class="extra-wide-figure"><img src="lib/assets/table5_b.png" alt="Missing"/></div>
-          </section>
-
-          <section>
-            <h3>Something about the data</h3>
-            <div class="extra-wide-figure"><img src="lib/assets/gifts_table.png" alt="Missing"/></div>
+            <div class="extra-wide-figure"><img src="lib/assets/transfers_reason.png" alt="Missing"/></div>
           </section>
         </section>
 
         <section>
           <section>
             <h3>Results I: Baseline regression Model</h3>
-            <div class="extra-wide-figure" style="height: 600px"><img src="lib/assets/base_reg.png" alt="Missing"/></div>
+            <div class="extra-wide-figure" ><img src="lib/assets/reg_1.png" alt="Missing"/></div>
           </section>
           <section>
             <h3>Results I: Impact of specific shocks</h3>
-            <div class="extra-wide-figure" style="height: 600px"><img src="lib/assets/base_reg_shock.png" alt="Missing"/></div>
+            <div class="extra-wide-figure" style="height: 600px"><img src="lib/assets/reg_2.png" alt="Missing"/></div>
           </section>
         </section>
 
         <section>
-          <h2><b>Summary</b></h2>
+          <section>
+            <h2>Problems!</h2>
+            <small>
+            <ul style="list-style-type:square">
+              <br>
+              <li>
+                Endoginity Bias due to ..... Soltion:
+              </li>
+              <br>
+              <li>
+                Errors in measuring subjective shock? Solution: Instrumental Shock Variable
+              </li>
+              <br>
+              <li>
+                Unobserable fixed effects in households not controlled for. Solution: well fixed effects regression
+              </li>
+            </ul>
+            </small>
+          </section>
+
+          <section>
+            <h3>Instrumental Shock Variable</h3>
+            <div class="extra-wide-figure" style="height: 600px"><img src="lib/assets/intrumental_shock.png" alt="Missing"/></div>
+          </section>
+
         </section>
 
         <section>
