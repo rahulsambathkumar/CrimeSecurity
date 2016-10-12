@@ -299,14 +299,16 @@ body {
 		filter: grayscale(0.6);
 }
 
-img#image {
-  border: 0;
-  border-style: none;
+div.extra-wide-figure {
+  display: inline-block;
+  padding: 10px 0em 10px  0em !important;
+  vertical-align: middle;
+  width: 100%;
 }
 
-img.resize {
-  max-width: 70%;
-  max-height: 50%;
-  text-align: center;
+div.extra-wide-figure img {
   display: block;
+  margin: 0 auto;
+  border: 0;
+  border-style: none;
 }
