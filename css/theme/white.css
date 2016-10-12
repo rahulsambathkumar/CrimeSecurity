@@ -289,14 +289,14 @@ body {
 /*Modifications*/
 .reveal .titleslide h2,
 .reveal .titleslide h5 {
-  color: #FFFFFF;
+  color: #A7B3BC;
 }
 
 .bw {
-		-webkit-filter: grayscale(0.6);
-		-moz-filter: grayscale(0.6);
-		-ms-filter: grayscale(0.6);
-		filter: grayscale(0.6);
+		-webkit-filter: grayscale(0.2);
+		-moz-filter: grayscale(0.2);
+		-ms-filter: grayscale(0.2);
+		filter: grayscale(0.2);
 }
 
 div.extra-wide-figure {
@@ -311,4 +311,10 @@ div.extra-wide-figure img {
   margin: 0 auto;
   border: 0;
   border-style: none;
+}
+
+div.highlight {
+  position:absolute;
+  width:600px;
+  background: rgba(255, 0, 0, 0.4);
 }
