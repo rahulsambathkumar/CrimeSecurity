@@ -34,27 +34,44 @@
         </section>
 
         <section>
-          <h3>Context</h3>
-          <br>
-          <small>
-            <ul style="list-style-type:square">
-              <li>
-                Crime a major social and economic issue in the United States. The direct cost of crime was
-                estimated to cost approximately 200 billion USD in 1993 (SOURCE).
-              </li>
-              <br>
-              <li>
-                Becker (1968) a seminal contribution in addressing the issues of criminal behaviour and
-                sanctions. However studies following Becker were unable to estimate the effect of
-                police force on crime.
-              </li>
-              <br>
-              <li>
-                Levitt's aim in this paper is to break the endoginity / simultaneity problem through
-                the use of intrumental variables.
-              </li>
-            </ul>
-          </small>
+          <section>
+            <h3>Context</h3>
+            <br>
+            <small>
+              <ul style="list-style-type:square; text-align: justify">
+                <li>
+                  Crime a major social and economic issue in the United States. The direct cost of crime was
+                  estimated to be approximately 200 billion USD in 1993 (Miller et all (1993)). Meanwhile, the federal
+                  government was estimated to spend 74 billion USD in 1990 on the criminal justice system, with 32 billion USD
+                  earmarked for police protection alone (Levitt (1997)).
+                </li>
+                <br>
+                <li>
+                  Becker (1968) was a seminal contribution in addressing the issues of criminal behaviour and
+                  sanctions. However studies following Becker were unable to estimate the effect of
+                  police force on crime.
+                </li>
+                <br>
+                <li>
+                  Studies faced the problem of police hiring being influenced by crime, i.e. increased crime rates could have led to
+                  higher police staffing. Levitt's aim in this paper is to break the problem of endoginity through intrumental variables approach.
+                </li>
+              </ul>
+            </small>
+          </section>
+          <section>
+            <h3>Context</h3>
+            <br>
+            <small>
+              <ul style="list-style-type:square; text-align: justify">
+                <li>
+                  The paper covers nearly 59 cities from 1970 to 1992 in the United States
+                </li>
+              </ul>
+            </small>
+            <br>
+            <div class="extra-wide-figure" ><img src="lib/img/Graph 1.png" alt="Missing"/></div>
+          </section>
         </section>
 
         <section>
@@ -62,15 +79,20 @@
             <h3>The IV used here in the timing of mayoral and gubernatorial elections</h3>
             <br>
             <small>
-              <p>Why?</p>
-              <ul style="list-style-type:square">
+              <ul style="list-style-type:square; text-align: justify">
                 <li>
-                  Crime is a political issue- political manipulation card- incumbents have an
-                  incentive to increase police force just before elections to project “<i>tough on crime</i>” image
+                  Crime is a political issue -  incumbents have an
+                  incentive to increase police force just before elections to project “<i>tough on crime</i>” image.
                 </li>
                 <br>
                 <li>
                   Number of sworn officers grows by approx. 2% on average in both gubernatorial and mayoral election but completely flat in non-election years.
+                </li>
+                <br>
+                <p class="fragment" data-fragment-index="1"><b>NOTE!</b></p>
+                <li class="fragment" data-fragment-index="1">
+                  The IV used should affect the size of police force but should not belong to the crime production function, i.e.
+                  any impact of elections on crime must flow through changes in police hiring practices alone.
                 </li>
               </ul>
             </small>
@@ -81,22 +103,6 @@
             <br>
             <div class="extra-wide-figure" ><img src="lib/img/Graph 2.png" alt="Missing"/></div>
           </section>
-          <!-- new slide deck below -->
-          <section>
-            <h3>Things to remember while using this IV</h3>
-            <br>
-            <small>
-              <ul style="list-style-type:square">
-                <li>
-                  It should affect the size of police force but should not belong to the crime production function
-                </li>
-                <br>
-                <li>
-                  Control using other variables to make it unrelated to crime
-                </li>
-              </ul>
-            </small>
-          </section>
         </section>
 
         <section>
@@ -104,13 +110,19 @@
             <h3>Model 1st Stage</h3>
             <br>
             <small>
-              <ul style="list-style-type:square">
+              <ul style="list-style-type:square; text-align: justify">
                 <li>
-                  Increase in police during elections does not account for other possible factors that might influence this rise such as state of economy etc
+                  The author estimates the effect of police on crime using Two Stage Least Squares (2SLS), modelling police as a function
+                  of election variables in the first step.
+                </li>
+                <br>
+                <li>
+                  Increase in police during elections does not account for other possible factors that might influence this rise such as state of economy,
+                  demographic variables, state expenditure on welfare and education, and other economic factors.
                 </li>
                 <br>
                 <li class="fragment">
-                  In order to account for those factors, a more formal modelling
+                  In order to account for those factors, a more formal modelling;
                   <br><br>
                   $$\Delta ln P_{it} = \Theta_{1}M_{it} + \Theta_{2}G_{it} + X_{it} \delta + \gamma_{t} + \lambda_{i} + \nu_{it} $$
                 </li>
@@ -131,16 +143,29 @@
             <h3>Model 2nd Stage</h3>
             <br>
             <small>
-              <ul style="list-style-type:square">
+              <ul style="list-style-type:square; text-align: justify">
                 <li>
-                  this is a trial post
+                  The second step of the 2SLS procedure requires regressing the categories of crime on
+                  predicted police hiring levels obtained in the earlier steps.
                 </li>
                 <br>
-                <li class="fragment">
-                  In order to account for those factors, a more formal modelling
+                <li class="fragment" data-fragment-index="1">
+                  The impact of police on crime is modelled as;
                   <br><br>
-                  $$\Delta ln C_{ijt} = \beta_{1j} \Delta ln P_{ijt} + \beta_{2j} \Delta ln P_{ijt - 1} + X_{it} \eta_{j} + \\
+                  $$\Delta ln C_{ijt} = \beta_{1j} \Delta ln P_{ijt} + \beta_{2j} \Delta ln P_{ijt - 1} + X_{it} \eta_{j} +
                    \gamma_{tj} + \lambda_{i} + \varepsilon_{ijt}$$
+                </li>
+                <br>
+                <li class="fragment" data-fragment-index="2">
+                  The coefficients are on police, demographic and state and local spending variables are constrained
+                  to be identical for all violent crimes and all property crimes, but are allowed to vary between the two groups
+                  of crime..
+                </li>
+                <p class="fragment" data-fragment-index="2"><b>NOTE!</b> Police hiring is treated as endogenous and all other controls are assumed to be exogenous</p>
+                <br>
+                <li class="fragment" data-fragment-index="3">
+                  Levitt also allows interaction of IV with city size and the region dummies. Due to the bias of
+                  overfitting in the 2SLS, author imployes Limited Information Maximum Likelihood (LIML) estimation.
                 </li>
               </ul>
             </small>
@@ -159,6 +184,114 @@
             <div class="extra-wide-figure" ><img src="lib/img/Table 4.png" alt="Missing"/></div>
             <div class="highlight" style="top: 235px; height:32px; left:125px; width:700px;"></div>
           </section>
+        </section>
+
+        <section>
+          <section>
+            <h3>Problems!</h3>
+            <br>
+            <small>
+              <ul style="list-style-type:square; text-align: justify">
+                <li>
+                  <b>Problem:</b> Overidentification in the 1st step of the Two Stage Least Squares method?
+                  <br><br>
+                  <b>Solution:</b> Test for overidentification within acceptable bounds after reducing cities
+                  with populations of less than 250000.
+                </li>
+                <br>
+                <li class="fragment">
+                  <b>Problem:</b> Endogenity in welfare and education Spending?
+                  <br><br>
+                  <b>Solution:</b> Little evidence of endoginity when using similar IVs. No change
+                  in estimates if trated as endogenous.
+                </li>
+                <br>
+                <li class="fragment">
+                  <b>Problem:</b> Assumption of equal effect of police on crime categories restrictive?
+                </li>
+              </ul>
+            </small>
+          </section>
+
+          <section>
+            <h3>Problems!</h3>
+            <br>
+            <div class="extra-wide-figure" ><img src="lib/img/Table 5.png" alt="Missing"/></div>
+          </section>
+        </section>
+
+        <section>
+          <h3>Public Policy Implications</h3>
+          <br>
+          <small>
+            <ul style="list-style-type:square; text-align: justify">
+              <li>
+                Cohen(1988) and Miller et al (1993) attempted to estimate the cost of crime and quality of life reductions due to pain and suffering,
+                calculating social cost of violent crimes as approximately $60,000 (1992 dollars).
+              </li>
+              <br>
+              <li class="fragment">
+                Estimated elasticity of violent crime with respect to sworn officers evaluated at the sample mean translates into a
+                reduction of between 3.2-7.0 reported violent crimes and 1.6-12.4 reported property crimes per additional police officer.
+                <br><br>
+                $$ \Rightarrow ~ SB =  3.2 * \$ 60000 + 1.6 * \$1100 \approx \$ 200000 $$
+              </li>
+              <br>
+              <li class="fragment">
+                Social costs of violent crime far outweigh those of property crime, elasticity of violent crime with respect to sworn officers are
+                estimated to be larger, virtually all of the social benefit of additional officers is due to the reduction in violent crimes.
+                <br><br>
+                $$ \Rightarrow ~ SC =  Salary + Overhead + Tax Loss \approx \$ 80000 $$
+              </li>
+              <br>
+              <br>
+              <p class="fragment"><b>We don’t know whether the social benefit of having one additional police officer exceeds its social costs!</b></p>
+            </ul>
+          </small>
+        </section>
+
+        <section>
+          <h3>Conclusion</h3>
+          <br>
+          <small>
+            <ul>
+              <li>
+                Levitt (1997), filled in gaps in the literature of crime in the 1990s.
+              </li>
+              <br>
+              <li>
+                The study uncovers a hidden link between police force hiring and election years, using the link to
+                address the issues of endogenity.
+              </li>
+              <br>
+              <li>
+                However it is impossible if the reduction in crime studied is due to a deterence effect of police
+                or a geographical re-distribution of crime.
+              </li>
+            </ul>
+          </small>
+        </section>
+
+        <section>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h6>Fun Fact!</h6>
+          <small>
+          <p style="text-align: justify;">The estimates showed statistical significance due to a weighing error.
+          In a subsequent paper, Levitt apologises for the error, and uses a different IV to provide more stable results</p>
+        </small>
+        </section>
+
+        <section>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <h3>MA CHIKNEES!</h3>
         </section>
 
 			</div>
