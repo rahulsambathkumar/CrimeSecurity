@@ -62,6 +62,10 @@ body {
 .reveal h4 {
   font-size: 1em; }
 
+.reveal .title h4 {
+  color: #ffffff;
+}
+
 .reveal h1 {
   text-shadow: none; }
 

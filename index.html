@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Risk-Sharing Networks in Rural Philippines</title>
+		<title>Electoral Cycles and Police Hiring</title>
 
 		<link rel="stylesheet" href="css/reveal_mod.css">
 		<link rel="stylesheet" href="css/theme/white.css">
@@ -25,79 +25,74 @@
 		<div class="reveal">
 			<div class="slides">
 				<section data-background-image="lib/assets/25.jpg" class="bw titleslide">
-          <h2><b>Risk Sharing Networks in Rural Philippines</b></h2>
-          <h5>Marcel Fafchamps and Susan Lund</h5>
-          <br><br><br><br>
-          <h5>Devvart Poddar</h5>
+          <h4 style="color:#ffffff;"><b> Using Electoral Cycles in Police Hiring to estimate the Effect of Police on Crime</b></h4>
+          <br>
+          <h5>Steven Levitt</h5>
+          <br><br><br><br><br>
+          <h5>Rahul Sambathkumar</h5>
           <h5 style="font-size: 0.7em;">Hertie School of Governance</h5>
         </section>
 
         <section>
-          <h3>Aims to understand the process of risk sharing ...</h3>
+          <h3>Context</h3>
           <br>
           <small>
             <ul style="list-style-type:square">
               <li>
-                <b>Risk Sharing:</b> Informal institutions allow household to counter the impact of income
-                variation. However process of risk sharing not explicitly detailed in literature
+                Crime a major social and economic issue in the United States. The direct cost of crime was
+                estimated to cost approximately 200 billion USD in 1993 (SOURCE).
               </li>
               <br>
               <li>
-                <b>Transfers and risk:</b> Aims to investigate which method of transfers (assets, gifts and informal loans) serve
-                to efficiently share risk
+                Becker (1968) a seminal contribution in addressing the issues of criminal behaviour and
+                sanctions. However studies following Becker were unable to estimate the effect of
+                police force on crime.
               </li>
               <br>
               <li>
-                <b>Gaps in literature:</b> Social Networks play an important role in risk sharing, however gaps in literature on
-                the topic. A primary objective
+                Levitt's aim in this paper is to break the endoginity / simultaneity problem through
+                the use of intrumental variables.
               </li>
             </ul>
           </small>
         </section>
 
         <section>
-          <!-- Makes space for vertical slides. Now use more section -->
           <section>
-            <h3>... through the flow of informal credit, gifts and transfers</h3>
+            <h3>The IV used here in the timing of mayoral and gubernatorial elections</h3>
             <br>
             <small>
+              <p>Why?</p>
               <ul style="list-style-type:square">
                 <li>
-                  If risk sharing is efficient, consumption should be unaffected by variations in income. i.e.
-                  shortages in income met through increased borrowings / gifts or through changes
-                  in household assets
+                  Crime is a political issue- political manipulation card- incumbents have an
+                  incentive to increase police force just before elections to project “<i>tough on crime</i>” image
                 </li>
                 <br>
                 <li>
-                  In the presence of open social networks characterised by frictionless transfers,
-                  efficient sharing of risk. However issues if transfers are not frictionless. (Friction ~
-                  Cost to be Kind)
-                </li>
-                <br>
-                <li  class="fragment">
-                  In such a case, basic model of risk sharing given by;
-                  <br><br>
-                  $$g_{s,t}^i + b_{s,t}^i + \Delta w_t^i = \alpha_0 + \alpha_1 z_{s,t}^i + \alpha_2 z_{s,t}^{P_i} +
-                  \alpha_3 X_t^i + \alpha_4 X_t^{P_i} + \alpha_4 V_t^i + \epsilon_t^i$$
+                  Number of sworn officers grows by approx. 2% on average in both gubernatorial and mayoral election but completely flat in non-election years.
                 </li>
               </ul>
-              <br><br>
             </small>
           </section>
-
+          <!-- new slide deck below -->
           <section>
-            <h3>... through the flow of informal credit, gifts and transfers</h3>
+            <h3>The IV used here in the timing of mayoral and gubernatorial elections</h3>
+            <br>
+            <div class="extra-wide-figure" ><img src="lib/img/Graph 2.png" alt="Missing"/></div>
+          </section>
+          <!-- new slide deck below -->
+          <section>
+            <h3>Things to remember while using this IV</h3>
             <br>
             <small>
               <ul style="list-style-type:square">
                 <li>
-                  $\alpha_2$, i.e. coefficiant of network shock, will be 0 if risk is shared efficiently,
-                  but > 0 in presence of friction.
+                  It should affect the size of police force but should not belong to the crime production function
                 </li>
                 <br>
                 <li>
-                  Authors also check for whether shock are partially or fully insured through
-                  informal gifts and transfers
+                  Control using other variables to make it unrelated to crime
                 </li>
               </ul>
             </small>
@@ -106,143 +101,64 @@
 
         <section>
           <section>
-            <h3>Set among 206 households in rural Philippines</h3>
+            <h3>Model 1st Stage</h3>
             <br>
             <small>
               <ul style="list-style-type:square">
                 <li>
-                  Survey conducted on 206 households randomly selected after a census.
-                  Three interviews were held with the housholds between
-                  July 1994, (after rice harvest) and March 1995, (after new crop has been transplanted).
-                </li>
-                <br>
-                <li>
-                  Respondents asked to list "insurance networks". Detailed characteristics of the
-                  households as well as its network partners were collected.
+                  Increase in police during elections does not account for other possible factors that might influence this rise such as state of economy etc
                 </li>
                 <br>
                 <li class="fragment">
-                  In addition, a subjective "shock" variable was measured ranging from -2 (very good) to
-                  +2 (very bad) based on their subjective weighting of the shocks.
+                  In order to account for those factors, a more formal modelling
+                  <br><br>
+                  $$\Delta ln P_{it} = \Theta_{1}M_{it} + \Theta_{2}G_{it} + X_{it} \delta + \gamma_{t} + \lambda_{i} + \nu_{it} $$
                 </li>
               </ul>
             </small>
           </section>
-
+          <!-- new slide deck below -->
           <section>
-            <h3>Gifts come from families while loan from "non-network" members</h3>
-            <div class="extra-wide-figure" style="height: 550px"><img src="lib/assets/transfers.png" alt="Missing"/></div>
-            <div class="highlight" style="top: 515px; height:110px; left:165px;"></div>
-          </section>
-
-          <section>
-            <h3>Reciprocity an important factor in informal credit</h3>
-            <div class="extra-wide-figure" style="height: 550px"><img src="lib/assets/transfers_reason.png" alt="Missing"/></div>
-            <div class="highlight" style="top: 545px; height:70px; left:40px; width:850px;"></div>
+            <h3>Model 1st Stage</h3>
+            <br>
+            <div class="extra-wide-figure" ><img src="lib/img/Table 2.png" alt="Missing"/></div>
+            <div class="highlight" style="top: 234px; height:70px; left:125px; width:700px;"></div>
           </section>
         </section>
 
         <section>
           <section>
-            <h3>Results I: Baseline Regression</h3>
-            <br><br>
-            <div class="extra-wide-figure" ><img src="lib/assets/reg_1.png" alt="Missing"/></div>
-          </section>
-          <section>
-            <h3>Results I: Impact of shock on household assets (sources of funds)</h3>
-            <br><br>
-            <div class="extra-wide-figure" style="height: 600px"><img src="lib/assets/reg_2.png" alt="Missing"/></div>
-          </section>
-        </section>
-
-        <section>
-          <section>
-            <h3>Problems!</h3>
+            <h3>Model 2nd Stage</h3>
+            <br>
             <small>
-            <ul style="list-style-type:square">
-              <br>
-              <li>
-                Endoginity Bias: Shocks might have led to creation of networks
-                <br><br>
-                <b>Solution:</b> Autocorrelation checks
-              </li>
-              <br><br>
-              <li>
-                Endoginity Bias: Shocks might be meausered according to expectation of
-                help. If respondents assume help is easily available, individual shock
-                component decreases
-                <br><br>
-                <b>Solution:</b> Instrumental Variable Approach?
-              </li>
-              <br><br>
-              <li>
-                Unobserable fixed effects in households during data collection.
-                <br><br>
-                <b>Soution:</b> Fixed effects regression.
-              </li>
-            </ul>
+              <ul style="list-style-type:square">
+                <li>
+                  this is a trial post
+                </li>
+                <br>
+                <li class="fragment">
+                  In order to account for those factors, a more formal modelling
+                  <br><br>
+                  $$\Delta ln C_{ijt} = \beta_{1j} \Delta ln P_{ijt} + \beta_{2j} \Delta ln P_{ijt - 1} + X_{it} \eta_{j} + \\
+                   \gamma_{tj} + \lambda_{i} + \varepsilon_{ijt}$$
+                </li>
+              </ul>
             </small>
           </section>
-
+          <!-- new slide deck below -->
           <section>
-            <h3>Instrumental Variable</h3>
+            <h3>Model 2nd Stage</h3>
             <br>
-            <div class="extra-wide-figure" style="height: 600px"><img src="lib/assets/intrumental_shock.png" alt="Missing"/></div>
+            <div class="extra-wide-figure" ><img src="lib/img/Table 3.png" alt="Missing"/></div>
+            <div class="highlight" style="top: 229px; height:32px; left:125px; width:700px;"></div>
           </section>
-        </section>
-
-        <section>
+          <!-- new slide deck below -->
           <section>
-            <h3>Results II.0: Fixed Effects Regression</h3>
-            <br><br>
-            <div class="extra-wide-figure" ><img src="lib/assets/fe_reg_1.png" alt="Missing"/></div>
+            <h3>Model 2nd Stage</h3>
+            <br>
+            <div class="extra-wide-figure" ><img src="lib/img/Table 4.png" alt="Missing"/></div>
+            <div class="highlight" style="top: 235px; height:32px; left:125px; width:700px;"></div>
           </section>
-          <section>
-            <h3>Results II.0: Impact of shock on household assets (sources of funds)</h3>
-            <br><br>
-            <div class="extra-wide-figure" style="height: 600px"><img src="lib/assets/fe_reg_2.png" alt="Missing"/></div>
-          </section>
-          <section>
-            <h3>Results II.0: Impact of specific shocks</h3>
-            <div class="extra-wide-figure" style="height: 600px"><img src="lib/assets/specific shocks.png" alt="Missing"/></div>
-            <div class="highlight" style="top: 445px; height:95px; left:40px; width:880px;"></div>
-          </section>
-        </section>
-
-        <section>
-          <h3><b>Conclusion: Risk shared amongst small pool primarily for consumption</b></h3>
-          <br>
-          <small>
-            <ul style="list-style-type:square">
-              <li>
-                Consumption smoothing an important morivation for gifts and transfers, but are
-                unable to share risk. Also shortfall in the average expenditure and expected inflows
-              </li>
-              <br>
-              <li>
-                Not all risks are equally "insured". Crop and livestock sales not influenced by
-                shocks.
-              </li>
-              <br>
-              <li>
-                "Novely of paper" lies in exploring the sharing of risk within a small pool of
-                friends and families.
-              </li>
-            </ul>
-          </small>
-        </section>
-
-        <section>
-          <br><br><br><br>
-          <h2>Thats all folks!</h2>
-          <br>
-          <small>
-            <p>
-              <b>Presentation:  </b> <a href="devvartpoddar.github.io/RiskSharing/">devvartpoddar.github.io/RiskSharing/</a>
-              <br>
-              <b>Github repo:   </b> <a href="https://github.com/devvartpoddar/RiskSharing">   Risk Sharing in Rural Philippines</a>
-            </p>
-          </small>
         </section>
 
 			</div>
